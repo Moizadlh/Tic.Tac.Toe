@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+    text-align: center;
+}
+body{
+    background: url(download.jpg) no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.gamebox{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    justify-content: center;
+    align-content: center;
+}
+
+.box{
+    border: 2px solid black;
+    border-radius: 10%;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* bordering */
+
+#_1{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+#_2{
+    border-right: none;
+    border-left: none;
+}
+#_3{
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+}
+#_12{
+    border-top: none;
+}
+#_32{
+    border-bottom: none;
+}
+
+/* status */
+
+#win{
+    padding: 0;
+    margin: 0;
+    font-size: 80px;
+}
+#primary,.menu{
+    margin: 0;
+    padding: 10px;
+    border: 2px;
+    border-radius: 10%;
+    background-color: blue;
+}
+.alp{
+    text-decoration: none;
+    color: black;
+}
+
+/* Responsive */
+
+@media screen and (max-width : 1200px) and (min-width : 800px) {
+   .box,#win{
+    font-size: 70px;
+   }
+}
+@media screen and (max-width : 799px) and (min-width : 450px) {
+    .box,#win{
+     font-size: 40px;
+    }
+    .box{
+        border: 1px solid black;
+        border-radius: 7%;
+    }
+}
+@media screen and (max-width : 499px) {
+    .box,#win{
+     font-size: 25px;
+    }
+    .box{
+        border: 1px solid black;
+        border-radius: 7%;
+    }
+}
+
+
+/* index */
+.index{
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    background-color: aqua;
+}
+
+.main{
+    font-size: 30px;
+    border: 2px;
+    border-radius: 70%;
+}
+.btn{
+    border: .5px solid blue;
+    border-radius: 25%;
+    background-color: blue;
+    padding: 5px;
+}
+.alpha{
+    font-size: 20px;
+    color: black;
+    background-color: blue;
+    text-decoration: none;
+}
+
+/* single player */
+#fmg{
+    display: none;
+}
+.choice{
+    margin: 100px;
+}
+.chc{
+    padding: 10px;
+    margin: 5px 10px;
+    color: whitesmoke;
+    border: 2px solid blue;
+    background-color: blue;
+    border-radius: 20%;
+}
+.chc:hover{
+    cursor: pointer;
+}
+
+/* double player */
+.clr{
+    background-color: aqua;
+}
+
+
+
+.img{
+    float: right;
+    height: 100vh;
+    width: 30%;
+}
+.img2{
+    float: left;
+    height: 100vh;
+    width: 30%;
+}
+
+
+@media screen and (max-width: 1000px)  and (min-width: 650px){
+    .clr{
+        top: 30%;
+    }
+}
